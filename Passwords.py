@@ -13,7 +13,16 @@ SPECIAL = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_",
 
 
 def word_in_file(word, filename, case_sensitive=False):
-    pass
+    with open(filename, "r", encoding="utf-8") as file:
+        for line in file:
+            clean_line = line.strip()
+            if case_sensitive:
+                if word == clean_line:
+                    return True
+            else:
+                if word.lower() == clean_line.lower():
+                    return True
+    return False
 
 
 def word_has_character(word, character_list):
@@ -29,13 +38,9 @@ def password_strength(password, min_length=10, strong_length=16):
 
 
 def main():
-    # Milestone 7: Test loop outline
     print("Password strength checker initialized.")
 
 
 if __name__ == "__main__":
     main()
-
-
-
 
