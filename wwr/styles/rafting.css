@@ -17,6 +17,7 @@ body {
     font-family: var(--body-font);
     color: var(--accent1-color);
     line-height: 1.6;
+    background-color: var(--accent2-color);
 }
 
 header,
@@ -24,6 +25,7 @@ main,
 footer {
     width: 840px;
     margin: 0 auto;
+    background-color: #ffffff;
 }
 
 h1,
@@ -43,6 +45,34 @@ article {
 
 .hero {
     position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 51, 102, 0.7);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    right: 50px;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 4px;
 }
 
 .hero article img {
@@ -50,6 +80,10 @@ article {
     width: 125px;
     margin: 10px;
     border-radius: 4px;
+}
+
+section {
+    background-color: #ffffff;
 }
 
 footer {
@@ -62,6 +96,10 @@ footer .socialmedia {
     justify-content: center;
     gap: 15px;
     margin-top: 10px;
+}
+
+footer .socialmedia a {
+    text-decoration: none;
 }
 
 footer .socialmedia img {
