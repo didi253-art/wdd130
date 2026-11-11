@@ -1,0 +1,70 @@
+:root {
+    --primary-color: #003366;
+    --secondary-color: #6699CC;
+    --accent1-color: #333333;
+    --accent2-color: #F4F4F4;
+    --heading-font: Georgia, serif;
+    --body-font: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    line-height: 1.6;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+footer .socialmedia img {
+    width: 32px;
+    height: 32px;
+}
