@@ -16,8 +16,8 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    line-height: 1.6;
     background-color: var(--accent2-color);
+    line-height: 1.6;
 }
 
 header,
@@ -28,6 +28,29 @@ footer {
     background-color: #ffffff;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -35,8 +58,6 @@ h2 {
     margin-bottom: 8px;
 }
 
-nav,
-p,
 section,
 article {
     margin: 16px;
@@ -51,6 +72,7 @@ article {
 .hero img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .hero h1 {
@@ -58,7 +80,7 @@ article {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(0, 51, 102, 0.7);
+    background-color: rgba(0, 51, 102, 0.8);
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 4px;
@@ -67,10 +89,10 @@ article {
 .hero article {
     position: absolute;
     bottom: 20px;
-    left: 50px;
-    right: 50px;
+    left: 30px;
+    right: 30px;
     background-color: var(--secondary-color);
-    color: #ffffff;
+    color: var(--accent1-color);
     padding: 15px;
     border-radius: 4px;
 }
@@ -89,6 +111,7 @@ section {
 footer {
     text-align: center;
     padding: 20px 0;
+    background-color: var(--accent2-color);
 }
 
 footer .socialmedia {
