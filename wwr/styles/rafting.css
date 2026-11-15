@@ -1,6 +1,5 @@
 :root {
     --primary-color: #003366;
-    --primary-rgb: 0, 51, 102;
     --accent-color: #ffffff;
     --text-color: #333333;
     --bg-light: #f4f4f4;
@@ -73,7 +72,7 @@ header nav a:hover {
     left: 0;
     width: 100%;
     text-align: center;
-    background-color: rgba(var(--primary-rgb), 0.6);
+    background-color: rgba(0, 51, 102, 0.6);
     color: var(--accent-color);
     padding: 14px 0;
     font-size: 2.4rem;
@@ -84,7 +83,7 @@ header nav a:hover {
     bottom: 25px;
     left: 5%;
     right: 5%;
-    background-color: rgba(var(--primary-rgb), 0.75);
+    background-color: rgba(0, 51, 102, 0.75);
     color: var(--accent-color);
     padding: 18px 24px;
     border-radius: 6px;
