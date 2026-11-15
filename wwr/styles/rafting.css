@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #003366;
+    --accent-color: #ffffff;
+    --text-color: #333333;
+    --bg-light: #f4f4f4;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,14 +13,14 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #333;
+    color: var(--text-color);
     max-width: 1200px;
     margin: 0 auto;
 }
 
 /* Header with CSS Grid */
 header {
-    background-color: #003366;
+    background-color: var(--primary-color);
     padding: 12px 24px;
 }
 
@@ -36,7 +43,7 @@ header nav {
 }
 
 header nav a {
-    color: #ffffff;
+    color: var(--accent-color);
     text-decoration: none;
     font-weight: bold;
     padding: 8px 14px;
@@ -47,19 +54,17 @@ header nav a:hover {
     border-radius: 4px;
 }
 
-/* Hero Section with Sharp Image Rendering & Transparent Overlays */
+/* Hero Section with Natural Aspect Ratio & Sharp Clarity */
 .hero {
     position: relative;
     width: 100%;
-    overflow: hidden;
 }
 
 .hero > img {
     display: block;
     width: 100%;
-    height: 450px;
-    object-fit: cover;
-    image-rendering: -webkit-optimize-contrast;
+    height: auto;
+    /* Preserves natural high-res image quality without pixel distortion */
 }
 
 .hero h1 {
@@ -69,7 +74,7 @@ header nav a:hover {
     width: 100%;
     text-align: center;
     background-color: rgba(0, 51, 102, 0.6);
-    color: #ffffff;
+    color: var(--accent-color);
     padding: 14px 0;
     font-size: 2.4rem;
 }
@@ -80,23 +85,18 @@ header nav a:hover {
     left: 5%;
     right: 5%;
     background-color: rgba(0, 51, 102, 0.75);
-    color: #ffffff;
+    color: var(--accent-color);
     padding: 18px 24px;
     border-radius: 6px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
 }
 
 .hero article img {
+    float: right;
     width: 120px;
     height: auto;
-    max-height: 90px;
     object-fit: contain;
     border-radius: 4px;
-    flex-shrink: 0;
+    margin-left: 20px;
 }
 
 /* History Section with CSS Grid */
@@ -107,7 +107,7 @@ header nav a:hover {
 
 .history h2 {
     text-align: center;
-    color: #003366;
+    color: var(--primary-color);
     margin-bottom: 20px;
 }
 
@@ -132,7 +132,7 @@ header nav a:hover {
 
 .adventures h2 {
     text-align: center;
-    color: #003366;
+    color: var(--primary-color);
     margin-bottom: 20px;
 }
 
@@ -144,7 +144,7 @@ header nav a:hover {
 
 .adventure-grid figure {
     flex: 1;
-    background-color: #f4f4f4;
+    background-color: var(--bg-light);
     padding: 8px;
     border-radius: 6px;
     text-align: center;
@@ -161,13 +161,13 @@ header nav a:hover {
     margin-top: 8px;
     font-size: 0.9rem;
     font-weight: bold;
-    color: #003366;
+    color: var(--primary-color);
 }
 
 /* Footer & Compact Social Media Icons */
 footer {
-    background-color: #003366;
-    color: #ffffff;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
     padding: 16px 24px;
     margin-top: 40px;
     display: flex;
@@ -175,18 +175,18 @@ footer {
     align-items: center;
 }
 
-.social-icons {
+.socialmedia {
     display: flex;
     align-items: center;
     gap: 14px;
 }
 
-.social-icons a {
+.socialmedia a {
     display: inline-block;
     line-height: 0;
 }
 
-.social-icons img {
+.socialmedia img {
     width: 32px;
     height: 32px;
     object-fit: contain;
