@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Exciting Expeditions</title>
-    <meta name="description" content="Get in touch with Exciting Expeditions for whitewater rafting reservations, general inquiries, website suggestions, and river trip details.">
+    <meta name="description" content="Contact Exciting Expeditions for whitewater rafting reservations, general inquiries, website suggestions, and river trip details.">
     <meta name="author" content="Dorathy Osakwe">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -22,82 +22,78 @@
     </header>
 
     <main>
-        <section class="contact-hero">
+        <section class="company-header">
             <h1>Exciting Expeditions</h1>
-            <div class="contact-details">
-                <div class="contact-info">
-                    <h2>Company Information</h2>
-                    <p><strong>Address:</strong> 450 River Canyon Road, Rapid City, ID 83440</p>
-                    <p><strong>Phone:</strong> +1 (208) 555-0194</p>
-                    <p><strong>Email:</strong> info@excitingexpeditions.com</p>
-                </div>
-                <div class="contact-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.0000000000005!2d-111.789687684497!3d43.8231099791158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b03dc48a5cf%3A0x1e5534d3c38ef412!2sBrigham%20Young%20University-Idaho!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Exciting Expeditions Location Map"></iframe>
-                </div>
-            </div>
+            <p>450 River Canyon Road</p>
+            <p>Rapid City, ID 83440</p>
+            <p>+1 (208) 555-0194</p>
+            <p>info@excitingexpeditions.com</p>
         </section>
 
-        <section class="employees">
+        <section class="map-form-grid">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.0000000000005!2d-111.789687684497!3d43.8231099791158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b03dc48a5cf%3A0x1e5534d3c38ef412!2sBrigham%20Young%20University-Idaho!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Exciting Expeditions Location Map"></iframe>
+            </div>
+
+            <form class="contact-form" action="#" method="post">
+                <div class="inline-field">
+                    <label for="fullname">Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Your Full Name" required>
+                </div>
+
+                <div class="inline-field">
+                    <label for="useremail">Email</label>
+                    <input type="email" id="useremail" name="useremail" placeholder="you@example.com" required>
+                </div>
+
+                <fieldset class="inline-field purpose-fieldset">
+                    <legend>Message Purpose</legend>
+                    <div class="radio-stack">
+                        <label for="purpose-general">
+                            <input type="radio" id="purpose-general" name="purpose" value="general" required>
+                            General Inquiry
+                        </label>
+                        <label for="purpose-reservation">
+                            <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                            Reservation Question
+                        </label>
+                        <label for="purpose-suggestion">
+                            <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+                            Website Suggestion
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="stacked-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Type here" required></textarea>
+                </div>
+
+                <div class="newsletter-check">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Get in Touch!</button>
+            </form>
+        </section>
+
+        <section class="employees-box">
             <h2>We Are Here to Serve You</h2>
             <div class="employee-grid">
                 <figure>
-                    <img src="images/employee1.jpg" alt="Lead River Guide">
+                    <img src="images/employee1.jpg" alt="Sarah Jenkins, Lead River Guide">
                     <figcaption>Sarah Jenkins - Lead River Guide</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employee2.jpg" alt="Reservations Manager">
+                    <img src="images/employee2.jpg" alt="Marcus Vance, Reservations Manager">
                     <figcaption>Marcus Vance - Reservations Manager</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employee3.jpg" alt="Safety Coordinator">
+                    <img src="images/employee3.jpg" alt="Carlos Mendoza, Safety Coordinator">
                     <figcaption>Carlos Mendoza - Safety Coordinator</figcaption>
                 </figure>
             </div>
-        </section>
-
-        <section class="contact-form-section">
-            <h2>Send Us a Message</h2>
-            <form class="contact-form" action="#" method="post">
-                <div class="form-group">
-                    <label for="fullname">Full Name:</label>
-                    <input type="text" id="fullname" name="fullname" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="useremail">Email Address:</label>
-                    <input type="email" id="useremail" name="useremail" required>
-                </div>
-
-                <fieldset class="form-group radio-group">
-                    <legend>Purpose of Message:</legend>
-                    <label for="purpose-general">
-                        <input type="radio" id="purpose-general" name="purpose" value="general" required>
-                        General Inquiry
-                    </label>
-                    <label for="purpose-reservation">
-                        <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
-                        Reservation Question
-                    </label>
-                    <label for="purpose-suggestion">
-                        <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
-                        Website Suggestion
-                    </label>
-                </fieldset>
-
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-
-                <div class="form-group checkbox-group">
-                    <label for="newsletter">
-                        <input type="checkbox" id="newsletter" name="newsletter">
-                        Please subscribe me to the monthly newsletter
-                    </label>
-                </div>
-
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
         </section>
     </main>
 
